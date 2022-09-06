@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Практика</title>
+    <style>
+      [v-cloak] {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container" id="app" v-cloak>
+      <div class="menu">
+        <img class="avatar" src="logo.jpg" alt="Высшая школа экономики" />
+        <h2>SPICEmodel</h2>
+        <div class="mainmenu">
+          <p>{{ main }}</p>
+          <div class="mainmenu-models">
+            <p>{{ models }}</p>
+            <div class="hover-models">
+              <a>Диоды</a>
+              <a>Транзисторы</a>
+              <a>Трансформаторы</a>
+              <a>Операционные усилители</a>
+            </div>
+          </div>
+          <p>{{ contacts }}</p>
+          <p>{{ order }}</p>
+        </div>
+      </div>
+      <div class="mainpage">
+        <div class="main">
+          <h1>Заказ моделей SPICEmodel</h1>
+          <h2>Используйте боковую панель для навигации</h2>
+        </div>
+        <div class="contact">
+          <p>Контакты</p>
+        </div>
+        <div class="order">
+          <h1>Заказать модель</h1>
+          <form action="/">
+            <input type="text" id="name" placeholder="ФИО" />
+            <br />
+            <input
+              type="text"
+              id="company"
+              placeholder="Наименование организации"
+            />
+            <br />
+            <div class="add">
+              <div class="add-info">
+                <label for="email">E-mail:</label>
+                <br />
+                <input type="email" id="email" placeholder="user@example.com" />
+              </div>
+              <div class="add-info">
+                <label for="number">Телефон:</label>
+                <br />
+                <input type="tel" id="number" placeholder="+12345678900" />
+              </div>
+            </div>
+            <div class="type-info">
+              <label for="type">Тип прибора</label>
+              <br />
+              <input
+                type="text"
+                id="type"
+                list="options"
+                placeholder="Выберите тип прибора"
+              />
+            </div>
+            <datalist id="options">
+              <option value="Диод"></option>
+              <option value="Транзистор"></option>
+              <option value="Трансформатор"></option>
+              <option value="Оп. усилитель"></option>
+            </datalist>
+            <label for="texta">Комментарий</label>
+            <br />
+            <textarea name="comments" id="texta" cols="20" rows="5"></textarea>
+          </form>
+          <button class="btn-order">Заказать</button>
+        </div>
+        <div class="catalog">
+          <h1>Схемотехнические модели</h1>
+          <input type="search" id="find" placeholder="Введите название модели">
+          <table>
+            <tr>
+              <th>Название</th>
+              <th>Производитель</th>
+              <th>max Iд, А</th>
+              <th>max Uд, В</th>
+              <th>max Uпроб, В</th>
+              <th>max P, Вт</th>
+              <th>Корпус</th>
+              <th>Условия Эксплуатации</th>
+              <th>Тех. описание</th>
+              <th>Ссылка</th>
+            </tr>
+            <tr>
+              <td>Название</td>
+              <td>Производитель</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>1</td>
+              <td>Корпус</td>
+              <td>Условия Эксплуатации</td>
+              <td>
+                <button class="btn">
+                  <i class="fa fa-download"></i>
+                </button>
+              </td>
+              <td>
+                <button class="btn">
+                  <i class="fa fa-download"></i>
+                </button>
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

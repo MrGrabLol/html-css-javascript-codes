@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: -8px;
+    font-family: 'Roboto', sans-serif;
+    /* position: relative; NOT 100% */
+}
+
+.avatar {
+    box-sizing: border-box;
+    margin-top: 25px;
+    border-radius: 50%;
+    position: relative;
+    width: 50%;
+}
+
+.menu {
+    box-sizing: border-box;
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    background: lightgray;
+}
+
+.mainpage {
+    /* border: 5px solid purple; */
+    position: absolute;
+    text-align: center;
+    /* vertical-align: middle; */
+    width: 80%;
+    height: 100%;
+    /* background-color: red; */
+    float: right;
+    /* top: 50%; */
+    left: 20%;
+    /* background-color: red;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; */
+}
+
+.main {
+    /* margin-top: 390px; */
+    justify-content: center;
+    /* display: inline-block; */
+    text-align: center;
+    /* z-index: 2; */
+    position: relative;
+    align-items: center;
+    display: none;
+}
+
+.contact {
+    z-index: 2;
+    /* position: inline-block; */
+    display: none;
+}
+
+.order {
+    /* top: 50%; */
+    /* border: 5px solid black; */
+    text-align: center;
+    /* display: inline-block; */
+    width: 70%;
+    margin-top: 90px;
+    /* vertical-align: middle; */
+    /* box-sizing: content-box; */
+    display: none;
+}
+
+.catalog {
+    display: inline-block;
+    /* display: none; */
+}
+
+.mainmenu p:hover {
+    color: rgb(31, 147, 201);
+    font-weight: bold;
+}
+
+.mainmenu p {
+    font-size: xx-large;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+.menu h2 {
+    padding-bottom: 50px;
+}
+
+.hover-models {
+    margin-top: -18px;
+    margin-bottom: -18px;
+    text-align: left;
+    display: none;
+    font-size: 24px;
+}
+
+.hover-models a {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    display: block;
+}
+
+.hover-models a:hover {
+    color: rgb(31, 147, 201);
+    font-weight: bold;
+}
+
+.mainmenu-models:hover .hover-models {
+    display: block;
+}
+
+.order form {
+    border-radius: 10px;
+    font-size: 20px;
+    /* float: inherit; */
+    /* margin-top: 375px; */
+    /* border: 5px solid yellow; */
+    background-color: lightgray; /* Fallback color */
+    /* background-color: gray; */
+    color: white;
+    font-weight: bold;
+    border: 2px solid rgb(31, 147, 201);
+    position: relative;
+    /* top: 50%; */
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    z-index: 2;
+    width: 100%;
+    /* padding: 20px; */
+    text-align: center;
+    display: inline-block;
+}
+
+input {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    border: 2px solid rgb(31, 147, 201);
+    width: 600px;
+    height: 50px;
+    border-radius: 60px;
+}
+
+.add input {
+    width: 300px;
+    height: 50px;
+}
+
+.add {
+    margin-top: 10px;
+    /* border: 3px solid white; */
+    text-align: center;
+}
+
+.add-info {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.type-info {
+    padding: 2px;
+    /* border: 2px solid blue; */
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.order textarea {
+    margin: 10px;
+    border: 2px solid rgb(31, 147, 201);
+    border-radius: 5px;
+    width: 600px;
+}
+
+.order label {
+    color: black;
+}
+
+.btn-order {
+    color: #42b983;
+    position: relative;
+    place-content: center;
+    place-items: center;
+    width: fit-content;
+    border-radius: 99px;
+    letter-spacing: 0.05em;
+    border: 2px solid #42b983;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 10px;
+    padding: 0.5rem 1.5rem;
+    white-space: nowrap;
+    font-weight: 700;
+    font-size: 18px;
+    outline: none;
+    background: #fff;
+    transition: all 0.22s;
+    margin-top: 15px;
+}
+
+.btn-order:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn-order:active {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+td {
+    border: 2px solid rgb(31, 147, 201);
+    padding: 10px;
+}
+
+th {
+    padding: 10px;
+    border: 2px solid rgb(31, 147, 201);
+}
+
+.catalog table {
+    margin-top: 40px;
+    border-collapse: collapse;
+}
+
+.btn {
+    width: 50px;
+    height: 30px;
+    background-color: rgb(8, 91, 199);
+    color: white;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.btn:active {
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.3);
+}
